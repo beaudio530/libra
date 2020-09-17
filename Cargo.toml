@@ -32,7 +32,6 @@ members = [
     "common/workspace-builder",
     "common/workspace-hack",
     "config",
-    "config/config-builder",
     "config/generate-key",
     "config/global-constants",
     "config/management",
@@ -150,7 +149,6 @@ members = [
 # For more, see the "Conditional compilation for tests" section in documentation/coding_guidelines.md.
 default-members = [
     "common/trace",
-    "config/config-builder",
     "config/generate-key",
     "config/management/genesis",
     "config/management/operational",
