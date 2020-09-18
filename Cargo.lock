@@ -1437,7 +1437,6 @@ name = "execution-correctness"
 version = "0.1.0"
 dependencies = [
  "anyhow 1.0.32 (registry+https://github.com/rust-lang/crates.io-index)",
- "config-builder 0.1.0",
  "consensus-types 0.1.0",
  "executor 0.1.0",
  "executor-test-helpers 0.1.0",
@@ -1445,6 +1444,7 @@ dependencies = [
  "libra-canonical-serialization 0.1.0",
  "libra-config 0.1.0",
  "libra-crypto 0.1.0",
+ "libra-genesis-tool 0.1.0",
  "libra-global-constants 0.1.0",
  "libra-logger 0.1.0",
  "libra-secure-net 0.1.0",
@@ -1467,7 +1467,6 @@ dependencies = [
  "anyhow 1.0.32 (registry+https://github.com/rust-lang/crates.io-index)",
  "compiled-stdlib 0.1.0",
  "compiler 0.1.0",
- "config-builder 0.1.0",
  "consensus-types 0.1.0",
  "executor-test-helpers 0.1.0",
  "executor-types 0.1.0",
@@ -1476,6 +1475,7 @@ dependencies = [
  "libra-canonical-serialization 0.1.0",
  "libra-config 0.1.0",
  "libra-crypto 0.1.0",
+ "libra-genesis-tool 0.1.0",
  "libra-logger 0.1.0",
  "libra-metrics 0.1.0",
  "libra-secure-net 0.1.0",
@@ -1502,12 +1502,12 @@ dependencies = [
 name = "executor-benchmark"
 version = "0.1.0"
 dependencies = [
- "config-builder 0.1.0",
  "executor 0.1.0",
  "executor-types 0.1.0",
  "itertools 0.9.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "libra-config 0.1.0",
  "libra-crypto 0.1.0",
+ "libra-genesis-tool 0.1.0",
  "libra-logger 0.1.0",
  "libra-time 0.1.0",
  "libra-types 0.1.0",
@@ -1528,11 +1528,11 @@ name = "executor-test-helpers"
 version = "0.1.0"
 dependencies = [
  "anyhow 1.0.32 (registry+https://github.com/rust-lang/crates.io-index)",
- "config-builder 0.1.0",
  "executor 0.1.0",
  "executor-types 0.1.0",
  "libra-config 0.1.0",
  "libra-crypto 0.1.0",
+ "libra-genesis-tool 0.1.0",
  "libra-temppath 0.1.0",
  "libra-types 0.1.0",
  "libra-vm 0.1.0",
@@ -2859,6 +2859,7 @@ dependencies = [
  "futures 0.3.5 (registry+https://github.com/rust-lang/crates.io-index)",
  "libra-config 0.1.0",
  "libra-crypto 0.1.0",
+ "libra-genesis-tool 0.1.0",
  "libra-global-constants 0.1.0",
  "libra-json-rpc 0.1.0",
  "libra-logger 0.1.0",
@@ -5780,11 +5781,13 @@ dependencies = [
  "libra-canonical-serialization 0.1.0",
  "libra-config 0.1.0",
  "libra-crypto 0.1.0",
+ "libra-genesis-tool 0.1.0",
  "libra-logger 0.1.0",
  "libra-mempool 0.1.0",
  "libra-metrics 0.1.0",
  "libra-network-address 0.1.0",
  "libra-proptest-helpers 0.1.0",
+ "libra-temppath 0.1.0",
  "libra-types 0.1.0",
  "libra-vm 0.1.0",
  "libra-workspace-hack 0.1.0",
@@ -6700,12 +6703,12 @@ name = "vm-validator"
 version = "0.1.0"
 dependencies = [
  "anyhow 1.0.32 (registry+https://github.com/rust-lang/crates.io-index)",
- "config-builder 0.1.0",
  "executor 0.1.0",
  "executor-test-helpers 0.1.0",
  "libra-config 0.1.0",
  "libra-crypto 0.1.0",
  "libra-state-view 0.1.0",
+ "libra-temppath 0.1.0",
  "libra-types 0.1.0",
  "libra-vm 0.1.0",
  "libra-workspace-hack 0.1.0",
@@ -6715,6 +6718,7 @@ dependencies = [
  "storage-interface 0.1.0",
  "storage-service 0.1.0",
  "transaction-builder 0.1.0",
+ "vm-genesis 0.1.0",
 ]
 
 [[package]]
